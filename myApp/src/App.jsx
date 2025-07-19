@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
+
 import AuthLayout from './layouts/AuthLayout';
 import MainLayout from './layouts/MainLayout';
 import Login from './EnteryPages/Login';
@@ -7,7 +8,6 @@ import Orders from './Pages/Orders';
 import Signup from './EnteryPages/Signup';
 import CardsContent from './Content/CardsContent';
 import CategoryPage from './CategoryPage';
-
 function App() {
   return (
    <>

@@ -15,10 +15,13 @@
     "@fontsource/roboto": "^5.2.5",
     "@mui/icons-material": "^6.4.7",
     "@mui/material": "^6.4.7",
+<<<<<<< HEAD
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
     "mongoose": "^8.16.3",
+=======
+>>>>>>> 69937d9bc210f5287756cb262a3408831323fcab
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.3.0"
@@ -34,10 +37,14 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "vite": "^6.2.0"
+<<<<<<< HEAD
   },
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "main": "eslint.config.js",
   "keywords": [],
   "author": "",
   "license": "ISC"
+=======
+  }
+>>>>>>> 69937d9bc210f5287756cb262a3408831323fcab
 }
