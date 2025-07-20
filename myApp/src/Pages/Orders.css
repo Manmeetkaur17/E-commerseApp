@@ -1,61 +1,149 @@
 .orders-container {
-    padding: 20px;
-    text-align: center;
-    align-items: center;
-  }
-  
-  .orders-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .order-card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: left;
-    background: #f9f9f9;
-  }
-  
-  .order-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  
-  .proceed-btn {
-    margin-top: 30px;
-    padding: 10px 20px;
-    background-color: #0f9d58;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .proceed-btn:hover {
-    background-color: #0a7d43;
-  }
-  
-  .order-card input[type="number"] {
-    width: 50px;
-    margin-left: 8px;
-  }
-  .order-card button {
-    margin-top: 10px;
-    background-color: #f44336;
-    color: white;
-    padding: 6px 10px;
-    border: none;
-    cursor: pointer;
-  }
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
 
-.bill{
-    background-color: azure;
-    color: black;
-    width: 80%;
-    align-self: center;
-    margin: 5% auto;
+.orders-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.orders-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.order-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.order-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain; /* changed from cover to contain */
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background-color: #f2f2f2; /* optional: to show boundary if image is small */
+  padding: 8px; /* optional: breathing room for contained images */
+}
+
+.order-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.order-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.order-card input[type='number'] {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 8px;
+  padding: 4px;
+}
+
+.order-card button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.order-card button:first-of-type,
+.order-card button:nth-of-type(2) {
+  background-color: #28a745;
+  color: white;
+}
+
+.order-card button:first-of-type:hover,
+.order-card button:nth-of-type(2):hover {
+  background-color: #218838;
+}
+
+.order-card button:last-of-type {
+  background-color: #f44336;
+  color: white;
+  margin-top: 12px;
+}
+
+.order-card button:last-of-type:hover {
+  background-color: #d32f2f;
+}
+
+.bill-section {
+  background: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.bill-table th,
+.bill-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.bill-table th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.bill-table tfoot td {
+  font-size: 17px;
+  background-color: #e8f5e9;
+}
+
+
+.proceed-btn {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.proceed-btn:hover {
+  background-color: #0056b3;
 }
